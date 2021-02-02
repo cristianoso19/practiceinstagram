@@ -2,28 +2,37 @@ body {
     margin: 0;
     font-family: Arial;
 }
+
 .post-list {
     display: grid;
-    grid-template-columns: repeat(3,minmax(100px, 293px));
+    grid-template-columns: repeat(3, minmax(100px, 293px));
     justify-content: center;
+    grid-auto-rows: .6666fr;
     grid-gap: 28px;
-
 }
+
 .post {
     cursor: pointer;
     position: relative;
     display: block;
-
+    overflow: hidden;
 }
+
 .post-image {
     margin: 0;
+    height: 100%;
+    width: 100%;
 }
+
 .post-image img {
     width: 100%;
     vertical-align: top;
+    height: 100%;
+    object-fit: cover;
 }
+
 .post-overlay {
-    background: rgba(0,0,0, .4);
+    background: rgba(0, 0, 0, .4);
     position: absolute;
     left: 0;
     right: 0;
@@ -35,9 +44,11 @@ body {
     color: white;
     text-align: center;
 }
+
 .post:hover .post-overlay {
     display: flex;
 }
+
 .post-likes,
 .post-comments {
     width: 80px;
