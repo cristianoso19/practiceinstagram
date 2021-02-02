@@ -63,7 +63,7 @@ body {
     display: inline-block;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 736px) {
     .post-list {
         grid-gap: 28px;
     }
