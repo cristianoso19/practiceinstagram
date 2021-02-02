@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Billabong';
+    src: url('../fonts/Billabong.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('Billabong.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 body {
     margin: 0;
     font-family: Arial;
@@ -8,7 +13,7 @@ body {
     grid-template-columns: repeat(3, minmax(100px, 293px));
     justify-content: center;
     grid-auto-rows: .6666fr;
-    grid-gap: 28px;
+    grid-gap: 3px;
 }
 
 .post {
@@ -58,9 +63,9 @@ body {
     display: inline-block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
     .post-list {
-        grid-gap: 3px;
+        grid-gap: 28px;
     }
 
 }
