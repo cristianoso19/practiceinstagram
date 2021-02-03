@@ -3,9 +3,37 @@
     src: url('../fonts/Billabong.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     url('Billabong.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
+/*@font-face {
+    font-family: 'Freight';
+    src: url('../fonts/freight-sans-bold.woff') format('woff') font-weight-bold,
+    src: url('../fonts/freight-sans-light.woff') format('woff') font-weight-lighter,
+    src: url('../fonts/freight-sans-book.woff') format('woff') font-weight-normal,
+; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+
+}*/
+
+@font-face {
+    font-family: 'Freight';
+    src: url('../fonts/freight-sans-book.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Freight';
+    src: url('../fonts/freight-sans-bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Freight';
+    src: url('../fonts/freight-sans-light.woff') format('woff');
+    font-style: normal;
+    font-weight: 200;
+}
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: 'Freight', sans-serif;
     display: grid;
     background-color: #fafafa;
 }
@@ -81,6 +109,8 @@ input {
     flex-grow: 1;
 }
 .user-description p {
+    font-family: 'Freight', sans-serif;
+    font-weight: 200;
     display: flex;
     align-items: center;
     font-size: 25px;
@@ -91,6 +121,10 @@ input {
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #dbdbdb;
     border-radius: 4px;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Freight', sans-serif;
 }
 .post-list {
     grid-area: "post-list";
