@@ -12,7 +12,7 @@ body {
 .container {
     display: grid;
     grid-template-areas: "header header header"
-                         "user-avatar user-profile user-profile"
+                         "user user user"
                          "stories stories stories"
                          "stats stats stats"
                          "publications publications publications"
@@ -61,7 +61,38 @@ input {
     font-size: 30px;
 }
 
+.user {
+    grid-area: "user";
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+}
+.user-photo {
+}
+.user-photo img {
+    width: 77px;
+    border-radius: 50%;
+}
+.user-description{
+    display: flex;
+    flex-direction: column;
+    padding-left: 13px;
+    justify-content: space-between;
+    flex-grow: 1;
 
+}
+.user-description p {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin: unset;
+}
+.user-description button {
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
 .post-list {
     grid-area: "post-list";
     display: grid;
