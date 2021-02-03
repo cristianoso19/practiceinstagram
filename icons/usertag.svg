@@ -1,5 +1,8 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 20C18.7614 20 21 17.7614 21 15C21 12.2386 18.7614 10 16 10C13.2386 10 11 12.2386 11 15C11 17.7614 13.2386 20 16 20Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M26 5H6C5.44772 5 5 5.44772 5 6V26C5 26.5523 5.44772 27 6 27H26C26.5523 27 27 26.5523 27 26V6C27 5.44772 26.5523 5 26 5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M7.22314 27C7.67684 25.0115 8.7923 23.236 10.3869 21.9643C11.9814 20.6926 13.9605 20 16.0001 20C18.0397 20 20.0188 20.6926 21.6134 21.9643C23.2079 23.236 24.3234 25.0115 24.7771 27" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 18 18" version="1.1">
+<g id="surface1">
+<path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 16 20 C 18.763889 20 21 17.763889 21 15 C 21 12.236111 18.763889 10 16 10 C 13.236111 10 11 12.236111 11 15 C 11 17.763889 13.236111 20 16 20 Z M 16 20 " transform="matrix(0.5625,0,0,0.5625,0,0)"/>
+<path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 26 5 L 6 5 C 5.444444 5 5 5.444444 5 6 L 5 26 C 5 26.555556 5.444444 27 6 27 L 26 27 C 26.555556 27 27 26.555556 27 26 L 27 6 C 27 5.444444 26.555556 5 26 5 Z M 26 5 " transform="matrix(0.5625,0,0,0.5625,0,0)"/>
+<path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 7.222222 27 C 7.673611 25.013889 8.791667 23.236111 10.388889 21.965278 C 11.979167 20.694444 13.958333 20 16 20 C 18.041667 20 20.020833 20.694444 21.611111 21.965278 C 23.208333 23.236111 24.326389 25.013889 24.777778 27 " transform="matrix(0.5625,0,0,0.5625,0,0)"/>
+</g>
 </svg>
