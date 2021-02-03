@@ -6,9 +6,60 @@
 body {
     margin: 0;
     font-family: Arial;
+    display: grid;
+    background-color: #fafafa;
 }
+.container {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "user-avatar user-profile user-profile"
+                         "stories stories stories"
+                         "stats stats stats"
+                         "publications publications publications"
+                         "post-list post-list post-list"
+                         "footer footer footer";
+}
+.header {
+    grid-area: "header";
+    display: grid;
+    grid-template-columns: repeat(3,0.33fr);
+    grid-auto-rows: 54px;
+    align-items: center;
+    background-color: #fff;
+    color: #262626;
+}
+.logo {
+    text-align: center;
+    font-family: 'Billabong';
+    font-size: 30px;
+}
+.search {
+    position: relative;
 
+}
+.search:before{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 14px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill:rgba(0, 0, 0, 1);transform:;-ms-filter:'%3E%3Cpath d='M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+}
+input {
+    padding: 5px 30px;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+}
+.actions {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 30px;
+}
 .post-list {
+    grid-area: "post-list";
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 293px));
     justify-content: center;
