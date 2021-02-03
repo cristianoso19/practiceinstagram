@@ -79,7 +79,6 @@ input {
     padding-left: 13px;
     justify-content: space-between;
     flex-grow: 1;
-
 }
 .user-description p {
     display: flex;
