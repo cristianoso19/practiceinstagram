@@ -37,18 +37,7 @@ body {
     display: grid;
     background-color: #fafafa;
 }
-.container {
-    display: grid;
-    grid-template-areas: "header header header"
-                         "user user user"
-                         "stories stories stories"
-                         "stats stats stats"
-                         "publications publications publications"
-                         "post-list post-list post-list"
-                         "footer footer footer";
-}
 .header {
-    grid-area: "header";
     display: grid;
     grid-template-columns: repeat(3,0.33fr);
     grid-auto-rows: 54px;
@@ -90,7 +79,6 @@ input {
 }
 
 .user {
-    grid-area: "user";
     display: flex;
     justify-content: space-between;
     margin: 16px;
@@ -132,6 +120,25 @@ input {
 .user-name {
     font-weight: 600;
     margin-bottom: 10px;
+}
+.stories {
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    margin-top: 13px;
+    border-bottom: 2px #dbdbdb solid;
+}
+.storie img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.storie p {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 7px;
+    margin-bottom: 25px;
 }
 .post-list {
     grid-area: "post-list";
