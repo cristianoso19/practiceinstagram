@@ -94,10 +94,13 @@ input {
     display: flex;
     justify-content: space-between;
     margin: 16px;
+    flex-direction: column;
 }
 .user-photo {
+    display: flex;
+
 }
-.user-photo img {
+.user-photo-img {
     width: 77px;
     border-radius: 50%;
 }
@@ -125,6 +128,10 @@ input {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Freight', sans-serif;
+}
+.user-name {
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 .post-list {
     grid-area: "post-list";
