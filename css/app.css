@@ -3,13 +3,6 @@
     src: url('../fonts/Billabong.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     url('Billabong.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
-/*@font-face {
-    font-family: 'Freight';
-    src: url('../fonts/freight-sans-bold.woff') format('woff') font-weight-bold,
-    src: url('../fonts/freight-sans-light.woff') format('woff') font-weight-lighter,
-    src: url('../fonts/freight-sans-book.woff') format('woff') font-weight-normal,
-; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+
-}*/
 
 @font-face {
     font-family: 'Freight';
@@ -42,12 +35,13 @@ body {
     position: fixed;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,0.33fr);
+    grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 52px;
     align-items: center;
     background-color: #fff;
     color: #262626;
     border-bottom: 2px #dbdbdb solid;
+    z-index: 3;
 }
 .logo {
     text-align: center;
@@ -57,6 +51,8 @@ body {
 .search {
     position: relative;
     display: none;
+    margin-right: auto;
+    margin-left: auto;
 }
 .search:before{
     content: "";
@@ -78,7 +74,6 @@ input {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    font-size: 30px;
 }
 
 .user {
@@ -97,23 +92,21 @@ input {
 }
 .user-description{
     display: flex;
-    flex-direction: column;
     padding-left: 25px;
-    justify-content: space-between;
     flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
 }
 .user-description p {
     font-family: 'Freight', sans-serif;
     font-weight: 200;
-    display: flex;
-    align-items: center;
     font-size: 29px;
     margin: unset;
     color: #545454;
 }
-.user-description span {
-    font-size: 14px;
-    color: #545454;
+.user-description img {
+    height: max-content;
 }
 .user-description button {
     height: 30px;
@@ -124,6 +117,13 @@ input {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Freight', sans-serif;
+    width: 100%;
+}
+.user-stats {
+    display: none;
+}
+.user-description-name {
+    display: none;
 }
 .user-name {
     font-weight: 600;
@@ -173,6 +173,9 @@ input {
     margin: unset;
     padding: 6px 0px 6px 0px;
     width: 30px;
+}
+.publications span {
+    display: none;
 }
 
 .post-list {
@@ -230,9 +233,109 @@ input {
     display: inline-block;
 }
 
+@media screen and (min-width: 582px) {
+    .search {
+        display: block;
+    }
+    .actions {
+        grid-column: 3 / -1;
+    }
+}
+
+@media screen and (min-width: 975px) {
+    .user,
+    .stories,
+    .stats
+    {
+        max-width: 975px;
+    }
+    .publications {
+        justify-content: space-evenly;
+    }
+}
+
 @media screen and (min-width: 736px) {
-    .post-list {
-        grid-gap: 28px;
+    .user {
+        margin: 70px auto 16px auto;
+        padding: 30px;
+    }
+    .user-photo-img {
+        width: 150px;
+        height: 150px;
+    }
+    .user-description {
+        align-items: unset;
+        flex-grow: 1;
+    }
+    .user-description p {
+        display: unset;
+        order: 1;
+    }
+    .user-description img {
+        padding: 3px;
+        margin-left: 8px;
+        order: 3;
+    }
+    .user-description button {
+        margin-left: 20px;
+        width: max-content;
+        order: 2;
+    }
+    .user-stats {
+        order: 4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        height: 18px;
+        font-weight: 600;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .user-stats p {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .user-description-name {
+        display: block;
+        padding-top: 20px;
+        order: 5;
+        width: 100%;
+        line-height: 25px;
+    }
+    .user-description-name p {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .stats {
+        display: none;
+    }
+    .user-data {
+        display: none;
+    }
+    .stories {
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .storie {
+        margin-top: 28px;
+    }
+    .storie img {
+        height: 77px;
+        width: 77px;
     }
 
+    .publications figure {
+        display: inherit;
+        align-items: center;
+    }
+    .publications span {
+        display: block;
+        color: #8e8e8e;
+        font-size: 14px;
+    }
+    .post-list {
+    grid-gap: 28px;
+    }
 }
