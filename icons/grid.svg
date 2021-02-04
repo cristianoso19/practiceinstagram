@@ -1,8 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 18 18" version="1.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#0095F6;stroke-width:0.844;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.25;}
+</style>
 <g id="surface1">
-<path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 25.5 5.5 L 6.5 5.5 C 5.944444 5.5 5.5 5.944444 5.5 6.5 L 5.5 25.5 C 5.5 26.055556 5.944444 26.5 6.5 26.5 L 25.5 26.5 C 26.055556 26.5 26.5 26.055556 26.5 25.5 L 26.5 6.5 C 26.5 5.944444 26.055556 5.5 25.5 5.5 Z M 25.5 5.5 " transform="matrix(0.5625,0,0,0.5625,0,0)"/>
-<path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 16 5.5 L 16 26.5 " transform="matrix(0.5625,0,0,0.5625,0,0)"/>
-<path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 26.5 16 L 5.5 16 " transform="matrix(0.5625,0,0,0.5625,0,0)"/>
+	<path class="st0" d="M14.3,3.1H3.7c-0.3,0-0.6,0.2-0.6,0.6v10.7c0,0.3,0.2,0.6,0.6,0.6h10.7c0.3,0,0.6-0.2,0.6-0.6V3.7
+		C14.9,3.3,14.7,3.1,14.3,3.1z"/>
+	<path class="st0" d="M9,3.1v11.8"/>
+	<path class="st0" d="M14.9,9H3.1"/>
 </g>
 </svg>
