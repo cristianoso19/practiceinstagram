@@ -36,11 +36,12 @@ body {
     font-family: 'Freight', sans-serif;
     display: grid;
     background-color: #fafafa;
+    color: #262626;
 }
 .header {
     display: grid;
     grid-template-columns: repeat(3,0.33fr);
-    grid-auto-rows: 54px;
+    grid-auto-rows: 52px;
     align-items: center;
     background-color: #fff;
     color: #262626;
@@ -95,7 +96,7 @@ input {
 .user-description{
     display: flex;
     flex-direction: column;
-    padding-left: 13px;
+    padding-left: 25px;
     justify-content: space-between;
     flex-grow: 1;
 }
@@ -104,15 +105,20 @@ input {
     font-weight: 200;
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 29px;
     margin: unset;
+    color: #545454;
+}
+.user-description span {
+    font-size: 14px;
+    color: #545454;
 }
 .user-description button {
     height: 30px;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #dbdbdb;
     border-radius: 4px;
-    color: #262626;
+    color: #545454;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Freight', sans-serif;
@@ -125,7 +131,7 @@ input {
     display:grid;
     grid-template-columns: repeat(5,1fr);
     justify-items: center;
-    margin-top: 13px;
+    margin-top: 11px;
     border-bottom: 2px #dbdbdb solid;
 }
 .storie img{
@@ -139,6 +145,22 @@ input {
     font-weight: 200;
     margin-top: 7px;
     margin-bottom: 25px;
+    font-size: 14px;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 48px;
+    border-bottom: 2px #dbdbdb solid;
+    padding-top: 11px;
+    font-weight: 600;
+}
+.stats p {
+    margin-top: 5px;
+    font-weight: 400;
+    color: #8e8e8e;
 }
 .post-list {
     grid-area: "post-list";
