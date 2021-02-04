@@ -176,7 +176,6 @@ input {
 }
 
 .post-list {
-    grid-area: "post-list";
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 293px));
     justify-content: center;
